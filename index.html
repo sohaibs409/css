@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile and Attachments Sidebar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1c1f2b;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 100%;
+            max-width: 300px;
+            background: #2b2e4a;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100vh;
+            color: #fff;
+        }
+        .profile-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-info img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .profile-info .name {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .profile-info .status {
+            color: #00ff9c;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .attachments {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .attachments img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+            }
+            .profile-info img {
+                width: 80px;
+                height: 80px;
+            }
+            .profile-info .name {
+                font-size: 16px;
+            }
+            .attachments img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .sidebar {
+                padding: 10px;
+            }
+            .profile-info img {
+                width: 70px;
+                height: 70px;
+            }
+            .profile-info .name {
+                font-size: 14px;
+            }
+            .attachments img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile-info">
+            <img src="pexels-chloekalaartist-1043474.jpg" alt="Profile Picture">
+            <div class="name">Jennifer Lisity</div>
+            <div class="status">Active Now</div>
+        </div>
+        <div class="attachments">
+            <img src="pexels-karolina-grabowska-4386431.jpg" alt="Attachment">
+            <img src="pexels-leventsimsek-12009336.jpg" alt="Attachment">
+            <img src="pexels-olly-3823487.jpg" alt="Attachment">
+            <img src="pexels-photo-3831185.webp" alt="Attachment">
+            <img src="pexels-zen-chung-5745174.jpg" alt="Attachment">
+        </div>
+    </div>
+</body>
+</html>
